@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: customer-api-jdbc2
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: somepassword
+    driver-class-name: org.postgresql.Driver
+  sql:
+    init:
+      mode: always
+server:
+  port: 9090

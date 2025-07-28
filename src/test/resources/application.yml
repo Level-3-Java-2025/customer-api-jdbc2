@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: customer-api-jdbc
+  datasource:
+    # Use a random database name for each test run
+    url: jdbc:h2:mem:testdb-${random.uuid}
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:schema.sql
